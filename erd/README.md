@@ -35,6 +35,17 @@ If you want immediate visuals without installing dependencies, open:
 
 - `erd/visuals.md` (Mermaid diagrams for current and improved ERDs)
 
+
+## PNG/PDF fallback generator (no external dependencies)
+
+If Graphviz/eralchemy are unavailable in your environment, run:
+
+```bash
+python erd/generate_png_pdf.py
+```
+
+This generates local artifacts in `erd/output/` (PNG/PDF), which are intentionally not committed to git.
+
 ## Output
 
 Generated outputs are written to `erd/output/` as:
